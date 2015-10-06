@@ -1,0 +1,22 @@
+package net.dadarkgragon.tothemon.common;
+
+import javax.swing.JFrame;
+
+public class ToTheMon extends JFrame implements Runnable{
+	
+	public static JFrame mainframe = new JFrame();
+	public static int width = 1280;
+	public static int height = 720;
+	
+	public static void main(String[] args) {
+		mainframe.setVisible(true);
+		mainframe.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		mainframe.setSize(width, height);
+		
+		
+	}
+
+	public void run() {
+		
+	}
+}

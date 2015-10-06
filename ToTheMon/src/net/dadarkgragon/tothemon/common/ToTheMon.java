@@ -1,0 +1,29 @@
+package net.dadarkgragon.tothemon.common;
+
+import java.awt.Image;
+import java.awt.Toolkit;
+import javax.swing.JFrame;
+
+public class ToTheMon {
+	
+	public static JFrame mainframe = new JFrame();
+	public static int width = 1280;
+	public static int height = 720;
+	public static String title = "To the Mon";
+	
+	
+	public static void main(String[] args) {
+
+		Image mainframeIcon = Toolkit.getDefaultToolkit().getImage("/resource/icons/mainframeIcon.png");
+		
+		mainframe.setVisible(true);
+		mainframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		mainframe.setSize(width, height);
+		mainframe.setTitle(title);
+		mainframe.setLocationRelativeTo(null);
+		mainframe.setIconImage(mainframeIcon);
+		
+		
+	}
+
+}
